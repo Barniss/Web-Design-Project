@@ -1,0 +1,71 @@
+.nav_bar_div{
+		margin-bottom:67px;
+		}
+	    .nav_bar{
+		top:0;
+        list-style-type: none;
+		position:fixed;
+        margin: 0;
+		width:100%;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333333;
+	
+        }
+		ul li{
+		    float: left;
+	    }
+		ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+		
+		.logo {
+		display: block;
+		padding: 10px 3px;
+		font-size: 20px;
+		color: yellow;
+		
+		}
+		#img_logo{
+		    margin: 3px ;
+			padding: 2px;
+        }
+    ul li a:hover {
+        background-color: #111111;
+    }  
+
+	body {
+	background-color:rgb(180,80,90);
+	color:rgb(200,200,200);
+	text-align:center
+	}
+	a{
+	text-align:left;
+	}
+	h2{
+	display:inline-block; color:yellow;
+	}
+	img{
+	display:inline-block;
+	}
+	p{
+	text-align: center;
+	font-size:30px; 
+	margin:41px;
+	color:rgba(167,167,167,0.7);
+	}
+	table{
+	text-align: center; 
+	border: 3px solid white; 
+	background-color:rgb(10,10,20);
+	margin-left:auto; margin-right:auto;
+	}
+	.inquiry_form{
+	text-align:center; 
+	background-color:rgb(180,180,180); 
+	color:rgb(10,10,3);
+	}

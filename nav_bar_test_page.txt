@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>
+        NAV BAR
+   </title>
+   
+    <style>
+	
+	</style>	
+	        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333333;
+        }
+		ul li{
+		    float: left;
+	    }
+		ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+    ul li a:hover {
+        background-color: #111111;
+    }
+            
+	</style>	
+</head>
+
+
+
+
+<body>
+<ul>
+  <a href="assignment1_homepage.html" target="self">
+  <li> <img src="moo_deng_solutions_logo.jpg" width="47px" height="37px"/></li> 
+  <li><h2> Moo-Deng Web Solutions </h2></li>
+  </a>
+  <li><a href="assignment1_homepage.html">Home</a></li>
+  <li><a href="tech_demos.html">Demos</a></li>
+  <li><a href="inquiry_form.html">Contact</a></li>
+  <li><a href="about_moo_deng_solutions.html">About</a></li>
+</ul>
+
+
+
+</body>
+</html>
