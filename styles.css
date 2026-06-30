@@ -1,15 +1,17 @@
 .nav_bar_div{
-		margin-bottom:67px;
-		}
-	    .nav_bar{
-		top:0;
+		display: block;
+    }
+	    .nav_bar{	
+		
+		top:0; 
+		left:0; 
         list-style-type: none;
-		position:fixed;
+		position:sticky;
         margin: 0;
 		width:100%;
         padding: 0;
         overflow: hidden;
-        background-color: #333333;
+        background-color: #000000;
 	
         }
 		ul li{
@@ -24,7 +26,6 @@
         }
 		
 		.logo {
-		display: block;
 		padding: 10px 3px;
 		font-size: 20px;
 		color: yellow;
@@ -35,12 +36,30 @@
 			padding: 2px;
         }
     ul li a:hover {
-        background-color: #111111;
+        background-color: #26cdb1;
     }  
+/* homepage's offerings section */
+	.service_offerings{
+		display:flex;
+		height: 500px;
+		border: 10px solid green;
+		flex-direction: row;
+		
 
+	}
+	.service_offerings div{
+		border-radius: 45px;
+		border: 1px solid green;
+		height: 96%;
+		padding: 1%;
+		margin:1%;
+		width: 30%;
+		
+	}
+/*end of offering section */
 	body {
-	background-color:rgb(180,80,90);
-	color:rgb(200,200,200);
+	background-color:rgb(220, 41, 59);
+	color:rgb(213, 211, 211);
 	text-align:center
 	}
 	a{
@@ -54,9 +73,9 @@
 	}
 	p{
 	text-align: center;
-	font-size:30px; 
+	font-size: 1.3em; 
 	margin:41px;
-	color:rgba(167,167,167,0.7);
+	color:rgb(251, 251, 251);
 	}
 	table{
 	text-align: center; 
