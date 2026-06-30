@@ -1,0 +1,98 @@
+/* navigation menu */
+
+.nav_bar_div{
+		display: block;
+    }
+	    .nav_bar{	
+		
+		top:0; 
+		left:0; 
+        list-style-type: none;
+		position:sticky;
+        margin: 0;
+		width:100%;
+        padding: 0;
+        overflow: hidden;
+        background-color: #041e26;
+	
+        }
+		ul li{
+		    float: left;
+	    }
+		ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+		
+		.logo {
+		padding: 10px 3px;
+		font-size: 20px;
+		color: rgb(204, 248, 6);
+		
+		}
+		#img_logo{
+		    margin: 3px ;
+			padding: 2px;
+        }
+    ul li a:hover {
+        background-color: #5a0e42;
+    }  
+/*intro section */
+.intro-text{
+	text-align: center;
+	font-size: 26px;
+	color:rgb(214, 208, 211);
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+/* homepage's offerings section */
+	.service_offerings{
+		display:flex;
+		height: 200px;
+		gap:2%;
+		flex-direction: row;
+		justify-content: center;
+		
+
+	}
+	
+	.service_offerings div{
+		border-radius: 45px;
+		border: 1px solid green;
+		height: 90%;
+		padding:0;
+		margin:1%;
+		width: 30%;
+		
+	}
+
+/*end of offering section */
+	body{
+	background-color:rgb(5, 54, 87);
+	color:rgb(255, 255, 255);
+	text-align:center;
+	}
+	a{
+	text-align:left;
+	color:rgb(148, 10, 79);
+	}
+	h2{
+	display:inline-block; color:rgb(204, 248, 6);
+	}
+	img{
+	display:inline-block;
+	}
+	p{
+	text-align: center; 
+	color:rgb(251, 251, 251);
+	}
+
+	.inquiry_form{
+	text-align:center; 
+	background-color:rgb(180,180,180); 
+	color:rgb(10,10,3);
+	}
