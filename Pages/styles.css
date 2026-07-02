@@ -1,98 +1,187 @@
+*{
+	box-sizing:border-box;
+}
+
 /* navigation menu */
 
 .nav_bar_div{
-		display: block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
     }
-	    .nav_bar{	
+.nav_bar{	
 		
-		top:0; 
-		left:0; 
-        list-style-type: none;
-		position:sticky;
-        margin: 0;
-		width:100%;
-        padding: 0;
-        overflow: hidden;
-        background-color: #041e26;
+	top:0; 
+	left:5%; 
+    list-style-type: none;
+	position:fixed;
+    margin: 0;
+	width:90%;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(4, 30, 38);
+	border-radius: 15px;
+}
+ul li{
+    float: left;
+    }	
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 	
-        }
-		ul li{
-		    float: left;
-	    }
-		ul li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        }
-		
-		.logo {
-		padding: 10px 3px;
-		font-size: 20px;
-		color: rgb(204, 248, 6);
-		
-		}
-		#img_logo{
-		    margin: 3px ;
-			padding: 2px;
-        }
-    ul li a:hover {
-        background-color: #5a0e42;
+.logo {
+	padding: 10px 3px;
+	font-size: 20px;
+	color: rgb(86, 230, 20);
+	
+}
+#img_logo{
+	width:47px;
+	height:37px;
+    margin: 3px 10px ;
+	padding: 2px;
+	border-radius: 10px;
+}
+ul li a:hover {
+    background-color: rgb(90, 14, 66);
     }  
 /*intro section */
-.intro-text{
-	text-align: center;
-	font-size: 26px;
-	color:rgb(214, 208, 211);
-	margin-left: 3%;
-	margin-right: 3%;
+.headline{
+	color:rgb(248, 127, 6);
+	margin-top: 50px;
 }
 
+.intro-text{
+	display: block;
+	height: 30%;
+	margin: 10px auto 10px;
+	width: min(75%, 900px);
+	max-width: 100%;
+}
+.intro-text p{
+	
+	text-align: center;
+	font-size: 25px;
+	color: rgb(235, 218, 227);
+	margin: 0;
+}
 /* homepage's offerings section */
-	.service_offerings{
-		display:flex;
-		height: 200px;
-		gap:2%;
-		flex-direction: row;
-		justify-content: center;
+.service_offerings{
+	display:flex;
+	align-items: stretch;
+	width:100%;
+	max-width: 1200px;
+	gap:2%;
+	flex-direction: row;
+	justify-content: center;
+	width:100%;
+	margin:0;
 		
+}
+.service-cards{
+	display:flex;
+	flex-direction: column;	
+	flex: 1 1 0;
+	min-height: 260px;
+	max-width: 33%;
+	overflow:auto;
+	border-radius: 8px;
+}
+.card-header{
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	padding: 16px;
+	font-weight: bold;
+	min-height:60px;
+	background-color: rgb(158, 9, 9);
+}
+.card-text{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+	background-color: rgb(132, 18, 18);
+}
+/*end of offering section */
+body{
+    background-color:rgb(5, 54, 87);
+    color:rgb(255, 255, 255);
+    text-align:center;
+}
+a{
+    text-align:left;
+    color:rgb(148, 10, 79);
+}
+h1,h2{
+    color:rgb(248, 127, 6);
+}
+img{
+    display:inline-block;
+}
+p{
+    text-align: center; 
+     color:rgb(251, 251, 251);
+}
 
+
+/* smaller view ports */
+
+@media (max-width: 800px){
+	.intro-text {
+		width: 90%;
+		margin-bottom: 20px;
 	}
 	
-	.service_offerings div{
-		border-radius: 45px;
-		border: 1px solid green;
-		height: 90%;
-		padding:0;
-		margin:1%;
-		width: 30%;
-		
+	.intro-text p {
+		font-size: 20px;
 	}
+	.service_offerings {
+    	flex-direction: column;
+    	align-items: center;
+    }	
+   .service-cards {
+    	max-width: 90%;
+		width: 100%;
+	}
+}
 
-/*end of offering section */
-	body{
-	background-color:rgb(5, 54, 87);
-	color:rgb(255, 255, 255);
-	text-align:center;
-	}
-	a{
-	text-align:left;
-	color:rgb(148, 10, 79);
-	}
-	h2{
-	display:inline-block; color:rgb(204, 248, 6);
-	}
-	img{
-	display:inline-block;
-	}
-	p{
-	text-align: center; 
-	color:rgb(251, 251, 251);
-	}
-
-	.inquiry_form{
-	text-align:center; 
-	background-color:rgb(180,180,180); 
-	color:rgb(10,10,3);
-	}
+/* inquiry form */
+#submitMessage{
+	display: block;
+	margin-top: 10px;
+	color: green;
+	font-weight: bold;
+}
+.inquiry_form {
+	text-align: center;
+	background: rgb(15, 49, 60);
+	color: rgb(255, 255, 255);
+	padding: 24px;
+	margin: 24px auto;
+	max-width: 600px;
+	border-radius: 12px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+	border: 1px solid rgb(109, 177, 109);
+}
+.inquiry_form input, .inquiry_form select,
+.inquiry_form textarea {
+	width: min(90%, 420px);
+	margin: 8px 0;
+	padding: 10px 12px;
+	border: 1px solid rgb(112, 24, 68);
+	border-radius: 6px;
+}
+.inquiry_form input[type="submit"] {
+	background-color: rgb(96, 225, 103);
+	color: rgb(4, 30, 38);
+	font-weight: bold;
+	cursor: pointer;
+}
+.inquiry_form input:hover[type="submit"]{
+	background-color: rgb(36, 207, 30);
+}
