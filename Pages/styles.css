@@ -100,14 +100,14 @@ ul li a:hover {
 	padding: 16px;
 	font-weight: bold;
 	min-height:60px;
-	background-color: rgb(158, 9, 9);
+	background-color: rgb(133, 173, 228);
 }
 .card-text{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex: 1;
-	background-color: rgb(132, 18, 18);
+	background-color: rgb(128, 115, 228);
 }
 /*end of offering section */
 body{
@@ -132,7 +132,15 @@ p{
     color:rgb(251, 251, 251);
     font-size: 1.5em; /*change this value if font sizes seem to big or delete this property*/
 }
-
+a:link{
+	color: rgb(30, 181, 198)
+}
+a:visited{
+	color: rgb(81, 234, 81);
+}
+a:hover{
+	color: rgb(208, 233, 87);
+}
 
 /* smaller view ports */
 @media (max-width: 500px){
@@ -230,6 +238,13 @@ p{
 }
 
 /* about us */
+#passionate-team{
+	margin: 2% 10% 8%;
+}
+#passionate-team p{
+	text-align: justify;
+	
+}
 .goals {
 	background-color: rgba(12, 146, 81, 0.637);
 	text-align: left;
